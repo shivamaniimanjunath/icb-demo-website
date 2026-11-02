@@ -21,17 +21,27 @@
       padding: 30px 15px;
     }
     h1 { font-size: 34px; }
-    .menu {
-      padding: 30px 20px;
-    }
-    .item {
-      background: white;
-      border-radius: 12px;
-      padding: 18px;
-      margin: 12px auto;
-      max-width: 350px;
-      box-shadow: 0 2px 8px #ddd;
-    }
+    
+.menu {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  padding: 30px 16px;
+}
+
+.menu h2 {
+  grid-column: 1 / -1;
+  margin: 10px 0 18px;
+}
+
+
+.item {
+  background: white;
+  border-radius: 12px;
+  padding: 22px 8px;
+  margin: 0;
+  box-shadow: 0 2px 8px #ddd;
+}
     footer {
       background: #103C30;
       color: white;
